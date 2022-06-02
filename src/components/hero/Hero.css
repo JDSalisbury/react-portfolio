@@ -1,0 +1,20 @@
+#masthead {
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+#author-bio {
+    float: left;
+    width: 27.65957446808511%;
+}
+
+#header-banner {
+    width: 68.08510638297872%;
+    float: right;
+    margin-top: 1px;
+}
+
+#img-jeff {
+    width: -webkit-fill-available;
+}

@@ -1,23 +1,72 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
+import NavBar from "./components/layout/Nav";
+import Hero from "./components/hero/Hero";
+import Work from "./components/work/Work";
+import { Detail } from "./components/detail/Detail";
+import { Footer } from "./components/layout/Footer";
+import { Routes, Route } from "react-router-dom";
+import { Skills } from "./components/skills/Skills";
+import { Contact } from "./components/contact/Contact";
+
+const Home = () => {
+  return (
+    <>
+      <Hero />
+      <Work />
+      <Skills />
+      <Contact />
+    </>
+  );
+};
+
+const Projects = () => {
+  return (
+    <>
+      <Work />
+    </>
+  );
+};
+
+const Project = () => {
+  return (
+    <>
+      <Detail />
+      {/* <Work /> */}
+    </>
+  );
+};
+
+const Me = () => {
+  return (
+    <>
+      <Hero />
+      <Skills />
+    </>
+  );
+};
+
+const ContactInfo = () => {
+  return (
+    <>
+      <Contact />
+    </>
+  );
+};
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar></NavBar>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:project" element={<Project />} />
+        <Route path="/projects/tag/:tag" element={<Projects />} />
+        <Route path="/about" element={<Me />} />
+        <Route path="/contact" element={<ContactInfo />} />
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }

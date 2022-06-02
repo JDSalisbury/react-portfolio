@@ -1,0 +1,22 @@
+.post-aside {
+    float: right;
+    width: 27.65957446808511%;
+    margin-top: 40px;
+}
+
+.title {
+    font-family: 'Helvetica', serif;
+    font-weight: bold;
+    font-size: 1.666666666666667em;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+.small-desc {
+    margin-bottom: 35px;
+}
+
+.post-content img {
+    max-width: 640px;
+    max-height: 360px;
+}

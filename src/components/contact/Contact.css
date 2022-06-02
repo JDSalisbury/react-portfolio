@@ -1,0 +1,37 @@
+.form-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    padding: 0px;
+    margin: 0px;
+    flex-wrap: wrap-reverse;
+    margin-left: 5%;
+
+}
+
+.input-area {
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 35px;
+    border: 1px solid #abacab;
+}
+
+.message {
+    border-radius: 24px;
+    resize: none;
+}
+
+.submit-btn {
+    width: 60px;
+    background: none;
+    border: none;
+
+    margin-left: 2.5rem;
+    display: block;
+    font-weight: 600;
+    font-family: 'Helvetica', serif;
+    color: #64a2d8;
+    letter-spacing: 0.08rem;
+    font-size: 0.8rem;
+}

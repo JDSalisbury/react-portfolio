@@ -1,6 +1,28 @@
 .App {
-  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  
 }
+body {
+  margin: 0;
+  font: 0.75em/1.75em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #555;
+  background: #fff;
+  padding: 0;
+}
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +58,4 @@
     transform: rotate(360deg);
   }
 }
+

@@ -1,0 +1,27 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px 0 40px 0;
+}
+
+.name-logo {
+    width: 48%;
+}
+
+#menu-primary-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-primary-items li a {
+    line-height: 0rem;
+    margin-left: 2.5rem;
+    display: block;
+    font-weight: 600;
+    font-family: 'Helvetica', serif;
+    color: #64a2d8;
+    letter-spacing: 0.08rem;
+    font-size: 0.8rem;
+}
