@@ -58,7 +58,7 @@ function App() {
   return (
     <div className="App">
       <NavBar></NavBar>
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<Me />} />
         <Route exact path="/contact" element={<ContactInfo />} />
