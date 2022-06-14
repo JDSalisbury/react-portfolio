@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./Contact.css";
 export const Contact = () => {
-  const { register, handleSubmit, errors, reset } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const encode = (data) => {
     return Object.keys(data)
