@@ -20,10 +20,9 @@ export const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": event.target.getAttribute("name"),
-        // ...name,
       }),
     })
-      .then()
+      .then((event) => console.log(event.target))
       .catch((error) => alert(error));
   };
 
@@ -31,7 +30,7 @@ export const Contact = () => {
     <div className="form-area">
       <form
         className="form-area"
-        onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}
+        onSubmit={handleSubmit2((data) => setData(JSON.stringify(data)))}
         data-netlify="true"
         method="post"
       >
