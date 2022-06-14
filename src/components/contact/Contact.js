@@ -4,13 +4,13 @@ import "./Contact.css";
 export const Contact = () => {
   const { register, handleSubmit, errors, reset } = useForm();
 
-  function encode(data) {
+  const encode = (data) => {
     return Object.keys(data)
       .map(
         (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
       )
       .join("&");
-  }
+  };
 
   const handlePost = (formData, event) => {
     fetch(`/`, {
@@ -19,6 +19,7 @@ export const Contact = () => {
       body: encode({ "form-name": "contact-form", ...formData }),
     })
       .then((response) => {
+        console.log(formData);
         reset();
         console.log(response);
       })
@@ -66,6 +67,23 @@ export const Contact = () => {
           rows="6"
           cols="50"
         />
+
+        <label
+          htmlFor="got-ya"
+          style={{
+            position: "absolute",
+            overflow: "hidden",
+            clip: "rect(0 0 0 0)",
+            height: "1px",
+            width: "1px",
+            margin: "-1px",
+            padding: "0",
+            border: "0",
+          }}
+        >
+          Don’t fill this out if you're human:
+          <input tabIndex="-1" name="got-ya" ref={register()} />
+        </label>
         <input className="submit-btn" type="submit" />
       </form>
     </div>
