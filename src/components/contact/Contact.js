@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./Contact.css";
 export const Contact = () => {
-  const { register, handleSubmit } = useForm();
-  const [data, setData] = useState("");
+  const { register, handleSubmit, errors, reset } = useForm();
 
   function encode(data) {
     return Object.keys(data)
@@ -13,47 +12,60 @@ export const Contact = () => {
       .join("&");
   }
 
-  const handleSubmit2 = (event) => {
-    event.preventDefault();
-    fetch("/", {
+  const handlePost = (formData, event) => {
+    fetch(`/`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": event.target.getAttribute("name"),
-      }),
+      body: encode({ "form-name": "contact-form", ...formData }),
     })
-      .then((event) => console.log(event.target))
-      .catch((error) => alert(error));
+      .then((response) => {
+        reset();
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    event.preventDefault();
   };
 
   return (
     <div className="form-area">
       <form
         className="form-area"
-        onSubmit={handleSubmit2((data) => setData(JSON.stringify(data)))}
+        onSubmit={handleSubmit(handlePost)}
+        name="contact-form"
+        method="POST"
+        action="/success/"
         data-netlify="true"
-        method="post"
+        netlify-honeypot="got-ya"
       >
         <input type="hidden" name="form-name" value="contact-form" />
-
+        <input
+          type="hidden"
+          name="formId"
+          value="contact-form"
+          ref={register()}
+        />
         <input
           className="input-area"
+          name="name"
           {...register("name")}
           placeholder="Name"
         />
         <input
           className="input-area"
+          name="email"
           {...register("email")}
           placeholder="Email"
         />
         <textarea
           className="input-area message"
+          name="message"
           {...register("message")}
           placeholder="Message"
           rows="6"
           cols="50"
         />
-        <p>{data}</p>
         <input className="submit-btn" type="submit" />
       </form>
     </div>
