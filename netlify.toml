@@ -1,4 +1,2 @@
 [build]
-  command = "CI=false npm run build"
-  publish = "public"
   functions = "functions/"
