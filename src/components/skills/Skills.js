@@ -16,7 +16,7 @@ export const Skills = () => {
           <img alt="Language logo" src={python} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="90"></progress>
+        <progress max="100" value="95"></progress>
       </div>
 
       <div className="stat">
@@ -40,7 +40,7 @@ export const Skills = () => {
           <img alt="Language logo" src={docker} className="png small-png" />
         </div>
         <span></span>
-        <progress max="100" value="65"></progress>
+        <progress max="100" value="70"></progress>
       </div>
 
       <div className="stat">
@@ -48,7 +48,7 @@ export const Skills = () => {
           <img alt="Language logo" src={java} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="20"></progress>
+        <progress max="100" value="10"></progress>
       </div>
 
       <div className="stat">
@@ -56,7 +56,7 @@ export const Skills = () => {
           <img alt="Language logo" src={php} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="25"></progress>
+        <progress max="100" value="15"></progress>
       </div>
 
       <div className="stat">
@@ -64,7 +64,7 @@ export const Skills = () => {
           <img alt="Language logo" src={jenkins} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="35"></progress>
+        <progress max="100" value="25"></progress>
       </div>
 
       <div className="stat">
