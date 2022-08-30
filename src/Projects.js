@@ -18,7 +18,7 @@ export const projects = [
     link: "draft_value",
     title: "MTGA Draft Value",
     small_desc: "Javascript Scrape and value MTGA exported draft.",
-    tags: ["Express", "Cheerio", "Javascript"],
+    tags: ["Express", "Cheerio", "Javascript", "Scripting"],
     website: {},
     github: "https://github.com/JDSalisbury/scrape-time",
     img: "mtg.png",

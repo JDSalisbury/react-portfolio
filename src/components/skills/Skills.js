@@ -16,7 +16,7 @@ export const Skills = () => {
           <img alt="Language logo" src={python} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="85"></progress>
+        <progress max="100" value="90"></progress>
       </div>
 
       <div className="stat">
@@ -32,7 +32,7 @@ export const Skills = () => {
           <img alt="Language logo" src={vue} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="80"></progress>
+        <progress max="100" value="83"></progress>
       </div>
 
       <div className="stat">
@@ -40,7 +40,7 @@ export const Skills = () => {
           <img alt="Language logo" src={docker} className="png small-png" />
         </div>
         <span></span>
-        <progress max="100" value="63"></progress>
+        <progress max="100" value="65"></progress>
       </div>
 
       <div className="stat">
@@ -48,7 +48,7 @@ export const Skills = () => {
           <img alt="Language logo" src={java} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="30"></progress>
+        <progress max="100" value="20"></progress>
       </div>
 
       <div className="stat">
@@ -56,7 +56,7 @@ export const Skills = () => {
           <img alt="Language logo" src={php} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="40"></progress>
+        <progress max="100" value="25"></progress>
       </div>
 
       <div className="stat">
@@ -64,7 +64,7 @@ export const Skills = () => {
           <img alt="Language logo" src={jenkins} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="55"></progress>
+        <progress max="100" value="35"></progress>
       </div>
 
       <div className="stat">
@@ -72,7 +72,7 @@ export const Skills = () => {
           <img alt="Language logo" src={aws} className="png" />
         </div>
         <span></span>
-        <progress max="100" value="50"></progress>
+        <progress max="100" value="68"></progress>
       </div>
     </div>
   );
