@@ -1,5 +1,5 @@
 import "./Hero.css";
-import jeff from "./detroit.jpg";
+import jeff from "./colorado.jpg";
 
 function Hero() {
   return (
