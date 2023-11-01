@@ -14,7 +14,12 @@ function Hero() {
         once had a car catch fire while driving it.
       </div>
       <div id="header-banner" role="banner">
-        <img id="img-jeff" src={jeff} alt="" />
+        <img
+          id="img-jeff"
+          src={jeff}
+          alt=""
+          style={{ height: "auto", width: "100%" }}
+        />
       </div>
     </div>
   );
