@@ -3,6 +3,22 @@
     margin-bottom: 30px;
 }
 
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+a:link {
+    color: #232323;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+  }
+
+  a:hover {
+    color: #6700e5;
+  }
+
 .hfeed {
     display: grid;
     gap: 20px;
@@ -16,6 +32,8 @@
     font-family: 'Helvetica', serif;
     letter-spacing: 0.03rem;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
 }
 
 .byline {

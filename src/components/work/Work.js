@@ -34,6 +34,7 @@ function Work() {
                     alt={project.small_desc}
                     width="220"
                     height="150"
+                    style={{ borderRadius: "15px" }}
                   />
                 </Link>
                 <h2 className="post-title entry-title">
