@@ -1,6 +1,7 @@
 #work-content {
     float: left;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 * {
@@ -16,14 +17,38 @@ a:visited {
   }
 
   a:hover {
-    color: #6700e5;
+    color: #9200bd;
   }
+
+
+
+.spin_splat {
+    animation: spin 20s linear infinite;
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    z-index: -2;
+    border-radius: 100%;
+    background-color: #9200bd;
+    margin-right: 131px;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
 .hfeed {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
+
+  
 
 .post-title {
     margin-top: -20px;
@@ -34,8 +59,15 @@ a:visited {
     font-weight: 500;
     display: flex;
     justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 220px;
 }
-
+.proj_box {
+    display: flex;
+    justify-content: center;
+    width: 220px;
+}
 .byline {
     margin: 0 0 0 0;
     font-size: 0.9166666666666667em;

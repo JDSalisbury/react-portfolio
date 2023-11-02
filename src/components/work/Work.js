@@ -24,27 +24,30 @@ function Work() {
         {currentList &&
           currentList.map((project) => {
             return (
-              <div key={project.link}>
-                <Link
-                  to={{ pathname: "/projects/" + project.link }}
-                  state={project}
-                >
-                  <img
-                    src={"/static/images/" + project.thumb}
-                    alt={project.small_desc}
-                    width="220"
-                    height="150"
-                    style={{ borderRadius: "15px" }}
-                  />
-                </Link>
-                <h2 className="post-title entry-title">
+              <div className="proj_box">
+                <div className="spin_splat"></div>
+                <div key={project.link}>
                   <Link
                     to={{ pathname: "/projects/" + project.link }}
                     state={project}
                   >
-                    {project.title}
+                    <img
+                      src={"/static/images/" + project.thumb}
+                      alt={project.small_desc}
+                      width="220"
+                      height="150"
+                      style={{ borderRadius: "15px" }}
+                    />
                   </Link>
-                </h2>
+                  <h2 className="post-title entry-title">
+                    <Link
+                      to={{ pathname: "/projects/" + project.link }}
+                      state={project}
+                    >
+                      {project.title}
+                    </Link>
+                  </h2>
+                </div>
               </div>
             );
           })}
