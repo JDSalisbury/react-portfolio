@@ -2,26 +2,60 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* This will vertically center the items in the header */
     width: 100%;
-    margin: 40px 0 40px 0;
+    margin: 2rem 0;
 }
 
 .name-logo {
-    width: 48%;
+    width:500px;
 }
+
 
 #menu-primary-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #menu-primary-items li a {
     line-height: 0rem;
     margin-left: 2.5rem;
-    display: block;
     font-weight: 600;
     font-family: 'Helvetica', serif;
     color: #64a2d8;
     letter-spacing: 0.08rem;
     font-size: 0.8rem;
 }
+
+@media (max-width: 985px) {
+    .name-logo {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: block;
+    }
+    .name-logo {
+        width:500px;
+        z-index: -2;
+    }
+    .menu {
+        margin-right: 2.5rem;
+
+    }
+}
+
+/* Additional tweaks for very small screens, like mobile phones in portrait mode */
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem; /* Adjust padding for smaller screens */
+        margin: 1rem 0; /* Adjust overall margin for smaller screens */
+    }
+
+    /* Further style adjustments for your menu items can go here */
+}
+
+
