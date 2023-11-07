@@ -2,6 +2,7 @@ import "./Work.css";
 
 import { projects } from "../../Projects";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Work() {
   let pathname = window.location.pathname.split("/");
@@ -17,6 +18,13 @@ function Work() {
       project.tags.includes(String(current_view))
     );
   }
+  let getRandomPokemonImage = () => {
+    let randomPokemonId = Math.floor(Math.random() * 898) + 1;
+    let pokeImageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomPokemonId}.png`;
+
+    return pokeImageUrl;
+  };
+
   return (
     <div id="work-content">
       {tag && <h1 className="post-title tag-title">{current_view}</h1>}
@@ -25,7 +33,7 @@ function Work() {
           currentList.map((project) => {
             return (
               <div className="proj_box">
-                <div className="spin_splat"></div>
+                <img className="spin_splat" src={getRandomPokemonImage()} />
                 <div key={project.link}>
                   <Link
                     to={{ pathname: "/projects/" + project.link }}
