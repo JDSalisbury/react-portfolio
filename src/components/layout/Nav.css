@@ -40,11 +40,19 @@
     }
     .name-logo {
         width:500px;
+
         z-index: -2;
     }
     .menu {
-        margin-right: 2.5rem;
+        margin-right: 60px;
+        margin-left: 0px;
 
+    }
+
+    #menu-primary-items {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 20px;
     }
 }
 

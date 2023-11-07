@@ -1,7 +1,7 @@
 #masthead {
     width: 100%;
     float: left;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 #author-bio {
@@ -17,4 +17,19 @@
 
 #img-jeff {
     width: -webkit-fill-available;
+}
+
+@media (max-width: 820px) {
+    #masthead {
+        width: 100%;
+        float: left;
+    }
+    #author-bio {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    #header-banner {
+        width: 100%;
+    }
 }
