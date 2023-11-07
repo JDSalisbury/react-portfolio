@@ -31,6 +31,9 @@
     .name-logo {
         width: 50%;
     }
+    .menu {
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -46,7 +49,7 @@
     .menu {
         margin-right: 60px;
         margin-left: 0px;
-
+        margin-bottom: 20px;
     }
 
     #menu-primary-items {
