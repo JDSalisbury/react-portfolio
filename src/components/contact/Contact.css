@@ -35,3 +35,14 @@
     letter-spacing: 0.08rem;
     font-size: 0.8rem;
 }
+
+
+@media (max-width: 659px) {
+    .form-area {
+        width: 98%;
+        padding: 0px;
+        margin: 0px;
+        flex-wrap: nowrap;
+    
+    }
+}
