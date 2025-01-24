@@ -18,12 +18,12 @@ function Work() {
       project.tags.includes(String(current_view))
     );
   }
-  let getRandomPokemonImage = () => {
-    let randomPokemonId = Math.floor(Math.random() * 898) + 1;
-    let pokeImageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomPokemonId}.png`;
+  // let getRandomPokemonImage = () => {
+  //   let randomPokemonId = Math.floor(Math.random() * 898) + 1;
+  //   let pokeImageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomPokemonId}.png`;
 
-    return pokeImageUrl;
-  };
+  //   return pokeImageUrl;
+  // };
 
   return (
     <div id="work-content">
@@ -33,7 +33,7 @@ function Work() {
           currentList.map((project) => {
             return (
               <div className="proj_box">
-                <img className="spin_splat" src={getRandomPokemonImage()} />
+                {/* <img className="spin_splat" src={getRandomPokemonImage()} /> */}
                 <div key={project.link}>
                   <Link
                     to={{ pathname: "/projects/" + project.link }}
