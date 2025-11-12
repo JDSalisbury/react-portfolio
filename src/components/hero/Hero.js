@@ -7,14 +7,15 @@ function Hero() {
       <div id="masthead">
         <div id="author-bio">
           <h1 className="bio-title">Jeff Salisbury</h1>
-          <p className="bio-role">V.P. Software Engineer</p>
+          <p className="bio-role">V.P. Software Engineer at JPMorganChase</p>
           <p className="bio-description">
-            Excellent interpersonal skills, outstanding work ethic, and proof-based
-            problem-solving capabilities. Recognized team player seeking to leverage
-            knowledge to help companies become more efficient in their technological
-            efforts. Capable of working anywhere in your workflow, from frontend
-            applications to backend business logic, database design, and DevOps CI/CD
-            pipelines into AWS or similar cloud platforms.
+            Self-driven software developer with excellent interpersonal skills and outstanding
+            work ethic. Known as an extremely fast learner and capable engineer who excels at
+            explaining complex technical concepts. Experienced in full-stack development across
+            the entire software lifecycle—from frontend applications to backend business logic,
+            database design, and DevOps CI/CD pipelines into AWS and cloud platforms. Proven
+            track record of handling challenging projects and delivering efficient technological
+            solutions.
           </p>
         </div>
         <div id="header-banner" role="banner">

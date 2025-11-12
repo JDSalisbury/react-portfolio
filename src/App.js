@@ -8,6 +8,7 @@ import { Footer } from "./components/layout/Footer";
 import { Routes, Route } from "react-router-dom";
 import { Skills } from "./components/skills/Skills";
 import { Contact } from "./components/contact/Contact";
+import { Experience } from "./components/experience/Experience";
 
 const Home = () => {
   return (
@@ -41,6 +42,7 @@ const Me = () => {
   return (
     <>
       <Hero />
+      <Experience />
       <Skills />
     </>
   );

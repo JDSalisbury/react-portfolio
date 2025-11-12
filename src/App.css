@@ -1,3 +1,7 @@
+* {
+  line-height: normal !important;
+}
+
 .App {
   min-height: 100vh;
   display: flex;
