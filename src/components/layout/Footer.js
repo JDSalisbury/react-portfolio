@@ -6,37 +6,29 @@ import {
   FaInstagramSquare,
   FaGithubSquare,
 } from "react-icons/fa";
+import { allSocialLinks } from "../../config/socialLinks";
+
+const iconComponents = {
+  github: FaGithubSquare,
+  linkedin: FaLinkedin,
+  facebook: FaFacebookSquare,
+  twitter: FaTwitterSquare,
+  instagram: FaInstagramSquare
+};
 
 const IconArea = () => {
   return (
     <p>
-      <a href="https://github.com/JDSalisbury" target="_blank" rel="noreferrer">
-        <FaGithubSquare size={20} />
-      </a>{" "}
-      <a
-        href="https://www.linkedin.com/in/jeffery-salisbury/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaLinkedin size={20} />
-      </a>{" "}
-      <a
-        href="https://www.facebook.com/jeffery.salisbury.7/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaFacebookSquare size={20} />
-      </a>{" "}
-      <a href="https://twitter.com/JDSalsy" target="_blank" rel="noreferrer">
-        <FaTwitterSquare size={20} />
-      </a>{" "}
-      <a
-        href="https://www.instagram.com/jeffsalsy/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaInstagramSquare size={20} />
-      </a>
+      {allSocialLinks.map((social) => {
+        const IconComponent = iconComponents[social.platform];
+        return (
+          <span key={social.platform}>
+            <a href={social.url} target="_blank" rel="noreferrer" aria-label={social.label}>
+              <IconComponent size={20} />
+            </a>{" "}
+          </span>
+        );
+      })}
     </p>
   );
 };

@@ -1,6 +1,7 @@
 import "./Hero.css";
 import jeff from "./colorado2.png";
 import SocialIcon from "../common/SocialIcon";
+import { primarySocialLinks } from "../../config/socialLinks";
 
 function Hero() {
   return (
@@ -19,20 +20,16 @@ function Hero() {
             solutions.
           </p>
           <div className="hero-social-links">
-            <SocialIcon
-              platform="github"
-              href="https://github.com/JDSalisbury"
-              label="GitHub"
-              className="social-button"
-              showLabel={true}
-            />
-            <SocialIcon
-              platform="linkedin"
-              href="https://www.linkedin.com/in/jeffery-salisbury/"
-              label="LinkedIn"
-              className="social-button social-button-primary"
-              showLabel={true}
-            />
+            {primarySocialLinks.map((social, index) => (
+              <SocialIcon
+                key={social.platform}
+                platform={social.platform}
+                href={social.url}
+                label={social.label}
+                className={`social-button ${index === 1 ? 'social-button-primary' : ''}`}
+                showLabel={true}
+              />
+            ))}
           </div>
         </div>
         <div id="header-banner" role="banner">
