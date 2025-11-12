@@ -20,14 +20,14 @@
   --color-dark-neutral: #2C3E50;
   --color-dark-neutral-deep: #1a252f;
 
-  /* Applied Color Roles */
+  /* Applied Color Roles - Light Mode */
   --color-background: var(--color-light-neutral);
   --color-background-alt: #f8f9fa;
   --color-surface: #ffffff;
   --color-surface-elevated: #ffffff;
   --color-border: #BDC3C7;
 
-  /* Text Colors */
+  /* Text Colors - Light Mode */
   --color-text-primary: var(--color-dark-neutral);
   --color-text-secondary: var(--color-secondary-muted);
   --color-text-tertiary: #95a5a6;
@@ -75,6 +75,24 @@
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  /* Applied Color Roles - Dark Mode */
+  --color-background: #1a1d23;
+  --color-background-alt: #141619;
+  --color-surface: #232730;
+  --color-surface-elevated: #2a2f3a;
+  --color-border: #3a4049;
+
+  /* Text Colors - Dark Mode */
+  --color-text-primary: #ECF0F1;
+  --color-text-secondary: #BDC3C7;
+  --color-text-tertiary: #7F8C8D;
+
+  /* Adjust accent for better dark mode visibility */
+  --color-accent: #1abc9c;
+  --color-accent-hover: #16a085;
 }
 
 * {

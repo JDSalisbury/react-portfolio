@@ -34,6 +34,7 @@ export const Skills = () => {
                 alt={`${skill.name} logo`}
                 src={skill.icon}
                 className={skill.isSmall ? "png small-png" : "png"}
+                loading="lazy"
               />
             </div>
             <div className="skill-info">

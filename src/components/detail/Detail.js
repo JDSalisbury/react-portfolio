@@ -10,8 +10,9 @@ export const Detail = () => {
     <div className="post-content">
       <img
         src={"/static/images/" + project.img}
-        alt="Typography"
+        alt={project.title}
         className="single-thumbnail"
+        loading="lazy"
       />
       <div className="post-aside">
         <h1 className="title entry-title">{project.title}</h1>

@@ -43,6 +43,7 @@ function Work() {
                     src={"/static/images/" + project.thumb}
                     alt={project.small_desc}
                     className="project-thumbnail"
+                    loading="lazy"
                   />
                 </Link>
 
