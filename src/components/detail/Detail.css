@@ -80,7 +80,7 @@
     display: inline-block;
     padding: 2px 6px;
     background: var(--color-surface-elevated);
-    color: var(--color-accent);
+    color: var(--color-accent) !important;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     font-size: 10px;
@@ -88,6 +88,10 @@
     text-decoration: none;
     transition: all var(--transition-base);
     white-space: nowrap;
+}
+
+.tag-link:visited {
+    color: var(--color-accent) !important;
 }
 
 .tag-link:hover {

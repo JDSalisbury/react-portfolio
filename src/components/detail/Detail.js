@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import "./Detail.css";
 import { Link } from "react-router-dom";
+import TagList from "../common/TagList";
 
 export const Detail = () => {
   const { state } = useLocation();
@@ -49,15 +50,7 @@ export const Detail = () => {
         <div className="byline">
           <strong>Tags:</strong>
           <div className="tag-container">
-            {project.tags.map((tag, index) => (
-              <Link
-                key={index}
-                to={{ pathname: "/projects/tag/" + tag }}
-                className="tag-link"
-              >
-                {tag}
-              </Link>
-            ))}
+            <TagList tags={project.tags} className="tag-link" />
           </div>
         </div>
       </div>

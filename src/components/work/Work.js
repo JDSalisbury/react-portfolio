@@ -2,6 +2,7 @@ import "./Work.css";
 
 import { projects } from "../../Projects";
 import { Link, useLocation } from "react-router-dom";
+import TagList from "../common/TagList";
 
 function Work() {
   const location = useLocation();
@@ -59,15 +60,7 @@ function Work() {
                     </h2>
                     <p className="project-description">{project.small_desc}</p>
                     <div className="project-tags">
-                      {project.tags.map((tag, index) => (
-                        <Link
-                          key={index}
-                          to={{ pathname: "/projects/tag/" + tag }}
-                          className="project-tag"
-                        >
-                          {tag}
-                        </Link>
-                      ))}
+                      <TagList tags={project.tags} className="project-tag" />
                     </div>
                   </div>
 

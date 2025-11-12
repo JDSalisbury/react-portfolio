@@ -1,0 +1,5 @@
+/* Base tag styles that can be extended by specific implementations */
+.tag-link {
+  display: inline-block;
+  transition: all var(--transition-base, 200ms ease);
+}
