@@ -1,5 +1,4 @@
 import "./Nav.css";
-import name from "./name_font.jpg";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -27,8 +26,12 @@ function NavBar() {
   return (
     <div className="header">
       <div className="header-content">
-        <Link to="/">
-          <img src={name} className="name-logo" alt="logo" />
+        <Link to="/" className="logo-link">
+          <span className="name-logo">
+            <span className="logo-bracket">&lt;</span>
+            <span className="logo-initials">JS</span>
+            <span className="logo-bracket"> /&gt;</span>
+          </span>
         </Link>
         <nav className="menu">
           <ul id="menu-primary-items">

@@ -3,8 +3,6 @@ import python from "./imgs/python.png";
 import react from "./imgs/react.png";
 import vue from "./imgs/vue.png";
 import docker from "./imgs/docker.png";
-import java from "./imgs/java.png";
-import php from "./imgs/php.png";
 import jenkins from "./imgs/jenkins.png";
 import aws from "./imgs/aws.png";
 import django from "./imgs/django.svg";
