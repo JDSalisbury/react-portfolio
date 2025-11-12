@@ -9,10 +9,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 var(--space-xl);
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: var(--space-lg);
     text-align: center;
 }
 
@@ -38,21 +35,17 @@
 
 .footer-content p:has(a[href*="github"]),
 .footer-content p:has(a[href*="linkedin"]) {
-    display: flex;
-    gap: var(--space-md);
     align-items: center;
 }
 
 .footer-content a {
     color: var(--color-text-secondary);
-    transition: all var(--transition-base);
     display: inline-flex;
     align-items: center;
 }
 
 .footer-content a:hover {
     color: var(--color-accent);
-    transform: translateY(-2px);
 }
 
 .footer-content svg {
@@ -67,6 +60,5 @@
 
     .footer-content {
         padding: 0 var(--space-lg);
-        gap: var(--space-md);
     }
 }

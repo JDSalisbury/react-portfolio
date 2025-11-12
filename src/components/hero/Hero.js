@@ -19,14 +19,14 @@ function Hero() {
             track record of handling challenging projects and delivering efficient technological
             solutions.
           </p>
-          <div className="hero-social-links">
+          <div className="hero-social-links flex gap-md">
             {primarySocialLinks.map((social, index) => (
               <SocialIcon
                 key={social.platform}
                 platform={social.platform}
                 href={social.url}
                 label={social.label}
-                className={`social-button ${index === 1 ? 'social-button-primary' : ''}`}
+                className={`social-button transition ${index === 1 ? 'social-button-primary' : ''}`}
                 showLabel={true}
               />
             ))}

@@ -18,12 +18,12 @@ const iconComponents = {
 
 const IconArea = () => {
   return (
-    <p>
+    <p className="flex gap-md">
       {allSocialLinks.map((social) => {
         const IconComponent = iconComponents[social.platform];
         return (
           <span key={social.platform}>
-            <a href={social.url} target="_blank" rel="noreferrer" aria-label={social.label}>
+            <a href={social.url} target="_blank" rel="noreferrer" aria-label={social.label} className="transition hover-lift">
               <IconComponent size={20} />
             </a>{" "}
           </span>
@@ -36,7 +36,7 @@ const IconArea = () => {
 export const Footer = () => {
   return (
     <div id="footer">
-      <div className="footer-content">
+      <div className="footer-content flex-col gap-lg">
         <p className="credit">
           Powered by{" "}
           <a

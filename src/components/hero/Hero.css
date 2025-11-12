@@ -50,8 +50,6 @@
 }
 
 .hero-social-links {
-    display: flex;
-    gap: var(--space-md);
     margin-top: var(--space-lg);
 }
 
@@ -79,13 +77,22 @@
 
 .social-button-primary {
     background: var(--color-accent);
-    color: white;
+    color: white !important;
     border-color: var(--color-accent);
+}
+
+.social-button-primary:visited {
+    color: white !important;
 }
 
 .social-button-primary:hover {
     background: var(--color-accent-hover);
     border-color: var(--color-accent-hover);
+    color: white !important;
+}
+
+.social-button-primary .social-icon-label {
+    color: white !important;
 }
 
 #header-banner {
