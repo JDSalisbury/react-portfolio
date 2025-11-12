@@ -5,22 +5,26 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <div className="header">
-      <img src={name} className="name-logo" alt="logo" />
-      <div className="menu">
-        <ul id="menu-primary-items">
-          <li id="menu-item-92">
-            <Link to="/">Home</Link>
-          </li>
-          <li id="menu-item-88">
-            <Link to="/projects">Work</Link>
-          </li>
-          <li id="menu-item-93">
-            <a href="/about">About</a>
-          </li>
-          <li id="menu-item-91">
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
+      <div className="header-content">
+        <Link to="/">
+          <img src={name} className="name-logo" alt="logo" />
+        </Link>
+        <nav className="menu">
+          <ul id="menu-primary-items">
+            <li id="menu-item-92">
+              <Link to="/">Home</Link>
+            </li>
+            <li id="menu-item-88">
+              <Link to="/projects">Work</Link>
+            </li>
+            <li id="menu-item-93">
+              <Link to="/about">About</Link>
+            </li>
+            <li id="menu-item-91">
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   );

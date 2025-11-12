@@ -29,8 +29,15 @@ export const Contact = () => {
   };
 
   return (
-    <div className="form-area">
-      <form
+    <section className="contact-wrapper">
+      <div className="contact-section">
+        <div className="contact-header">
+          <h2 className="contact-title">Get In Touch</h2>
+          <p className="contact-subtitle">
+            Have a project in mind or want to discuss opportunities? Let's connect!
+          </p>
+        </div>
+        <form
         className="form-area"
         onSubmit={handleSubmit(handlePost)}
         name="contact-form"
@@ -50,21 +57,24 @@ export const Contact = () => {
           className="input-area"
           name="name"
           {...register("name")}
-          placeholder="Name"
+          placeholder="Your Name"
+          required
         />
         <input
           className="input-area"
           name="email"
+          type="email"
           {...register("email")}
-          placeholder="Email"
+          placeholder="Your Email"
+          required
         />
         <textarea
           className="input-area message"
           name="message"
           {...register("message")}
-          placeholder="Message"
+          placeholder="Your Message"
           rows="6"
-          cols="50"
+          required
         />
 
         <label
@@ -80,11 +90,14 @@ export const Contact = () => {
             border: "0",
           }}
         >
-          Don’t fill this out if you're human:
+          Don't fill this out if you're human:
           <input tabIndex="-1" name="got-ya" ref={register()} />
         </label>
-        <input className="submit-btn" type="submit" />
-      </form>
-    </div>
+        <button className="submit-btn" type="submit">
+          Send Message
+        </button>
+        </form>
+      </div>
+    </section>
   );
 };

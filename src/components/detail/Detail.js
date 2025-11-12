@@ -19,7 +19,7 @@ export const Detail = () => {
         <div className="byline small-desc">{project.small_desc}</div>
 
         <div className="byline">
-          Repo:{" "}
+          <strong>Repo:</strong>{" "}
           <a
             href={project.github}
             title="Github repo"
@@ -31,7 +31,7 @@ export const Detail = () => {
         </div>
         {project.website && project.website.link ? (
           <div className="byline">
-            Site:{" "}
+            <strong>Site:</strong>{" "}
             <a
               href={project.website.link}
               title="Live site"
@@ -46,14 +46,18 @@ export const Detail = () => {
         )}
 
         <div className="byline">
-          Tags:{" "}
-          {project.tags.map((tag) => {
-            return (
-              <>
-                <Link to={{ pathname: "/projects/tag/" + tag }}>{tag}</Link>;{" "}
-              </>
-            );
-          })}
+          <strong>Tags:</strong>
+          <div className="tag-container">
+            {project.tags.map((tag, index) => (
+              <Link
+                key={index}
+                to={{ pathname: "/projects/tag/" + tag }}
+                className="tag-link"
+              >
+                {tag}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
 
