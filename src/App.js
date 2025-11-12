@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import { Skills } from "./components/skills/Skills";
 import { Contact } from "./components/contact/Contact";
 import { Experience } from "./components/experience/Experience";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 const Home = () => {
   return (
@@ -58,6 +59,7 @@ const ContactInfo = () => {
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <NavBar></NavBar>
       <Routes basename={process.env.PUBLIC_URL}>
         <Route exact path="/" element={<Home />} />
